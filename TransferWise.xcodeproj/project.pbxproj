@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42F0F68320E2265B004BF1EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F68220E2265B004BF1EC /* AppDelegate.swift */; };
+		42F0F68A20E2265C004BF1EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F0F68920E2265C004BF1EC /* Assets.xcassets */; };
+		42F0F68D20E2265C004BF1EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F0F68B20E2265C004BF1EC /* LaunchScreen.storyboard */; };
+		42F0F69820E2265C004BF1EC /* TransferWiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F69720E2265C004BF1EC /* TransferWiseTests.swift */; };
+		42F0F6AA20E22795004BF1EC /* StoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6A920E22795004BF1EC /* StoreType.swift */; };
+		42F0F6AC20E227A3004BF1EC /* RealmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6AB20E227A3004BF1EC /* RealmStore.swift */; };
+		42F0F6AF20E227BF004BF1EC /* RealmPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6AE20E227BF004BF1EC /* RealmPost.swift */; };
+		42F0F6B120E227D0004BF1EC /* RealmComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6B020E227D0004BF1EC /* RealmComment.swift */; };
+		42F0F6B320E22902004BF1EC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6B220E22902004BF1EC /* Coordinator.swift */; };
+		42F0F6B520E22919004BF1EC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6B420E22919004BF1EC /* AppCoordinator.swift */; };
+		42F0F6B720E2295A004BF1EC /* PostList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F0F6B620E2295A004BF1EC /* PostList.storyboard */; };
+		42F0F6BC20E229F4004BF1EC /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6BB20E229F4004BF1EC /* PostTableViewController.swift */; };
+		42F0F6BE20E22A35004BF1EC /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6BD20E22A35004BF1EC /* PostTableViewCell.swift */; };
+		42F0F6C020E22B3E004BF1EC /* PostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6BF20E22B3E004BF1EC /* PostType.swift */; };
+		42F0F6C220E22B48004BF1EC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6C120E22B48004BF1EC /* Post.swift */; };
+		42F0F6C420E22BA6004BF1EC /* PostTableViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6C320E22BA6004BF1EC /* PostTableViewModelType.swift */; };
+		42F0F6C620E22BB7004BF1EC /* PostTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6C520E22BB7004BF1EC /* PostTableViewModel.swift */; };
+		42F0F6C820E22BD5004BF1EC /* PostViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6C720E22BD5004BF1EC /* PostViewModelType.swift */; };
+		42F0F6CA20E22BE0004BF1EC /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6C920E22BE0004BF1EC /* PostViewModel.swift */; };
+		42F0F6CC20E22C5A004BF1EC /* PostTableViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6CB20E22C5A004BF1EC /* PostTableViewModelDelegate.swift */; };
+		42F0F6CE20E22DA6004BF1EC /* APIClientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6CD20E22DA6004BF1EC /* APIClientType.swift */; };
+		42F0F6D020E22DB2004BF1EC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6CF20E22DB2004BF1EC /* APIClient.swift */; };
+		42F0F6D220E22DCD004BF1EC /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6D120E22DCD004BF1EC /* APIConfiguration.swift */; };
+		42F0F6D420E22DDC004BF1EC /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6D320E22DDC004BF1EC /* APIEndPoint.swift */; };
+		42F0F6D620E22ECB004BF1EC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6D520E22ECB004BF1EC /* Constants.swift */; };
+		42F0F6D920E22F2F004BF1EC /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6D820E22F2F004BF1EC /* Reach.swift */; };
+		42F0F6DB20E22F54004BF1EC /* ReachExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6DA20E22F54004BF1EC /* ReachExtension.swift */; };
+		42F0F6DD20E22FBC004BF1EC /* PostListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6DC20E22FBC004BF1EC /* PostListCoordinator.swift */; };
+		42F0F6E020E2309C004BF1EC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6DF20E2309C004BF1EC /* ErrorView.swift */; };
+		42F0F6E520E2333D004BF1EC /* CommentList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F0F6E420E2333D004BF1EC /* CommentList.storyboard */; };
+		42F0F6E720E23350004BF1EC /* CommentListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6E620E23350004BF1EC /* CommentListCoordinator.swift */; };
+		42F0F6EB20E23394004BF1EC /* CommentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6EA20E23394004BF1EC /* CommentListViewController.swift */; };
+		42F0F6ED20E233AB004BF1EC /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6EC20E233AB004BF1EC /* CommentTableViewCell.swift */; };
+		42F0F6EF20E233BD004BF1EC /* CommentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6EE20E233BD004BF1EC /* CommentType.swift */; };
+		42F0F6F120E233C5004BF1EC /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6F020E233C5004BF1EC /* Comment.swift */; };
+		42F0F6F320E233E8004BF1EC /* CommentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6F220E233E8004BF1EC /* CommentListViewModel.swift */; };
+		42F0F6F520E233F6004BF1EC /* CommentListViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6F420E233F6004BF1EC /* CommentListViewModelType.swift */; };
+		42F0F6F720E23403004BF1EC /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6F620E23403004BF1EC /* CommentViewModel.swift */; };
+		42F0F6F920E23410004BF1EC /* CommentViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6F820E23410004BF1EC /* CommentViewModelType.swift */; };
+		42F0F6FB20E23429004BF1EC /* CommentListViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F6FA20E23429004BF1EC /* CommentListViewModelDelegate.swift */; };
+		42F0F70120E27B48004BF1EC /* PostTableViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F70020E27B48004BF1EC /* PostTableViewModelTest.swift */; };
+		42F0F70320E27B61004BF1EC /* PostViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F70220E27B61004BF1EC /* PostViewModelTest.swift */; };
+		42F0F70520E27B7F004BF1EC /* CommentListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F70420E27B7F004BF1EC /* CommentListViewModelTest.swift */; };
+		42F0F70720E27B8E004BF1EC /* CommentViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F70620E27B8E004BF1EC /* CommentViewModelTest.swift */; };
+		42F0F70920E27BA5004BF1EC /* DummyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F70820E27BA5004BF1EC /* DummyStore.swift */; };
+		42F0F70B20E27BB4004BF1EC /* DummyEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F70A20E27BB4004BF1EC /* DummyEndPoint.swift */; };
+		42F0F70D20E27BD5004BF1EC /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F0F70C20E27BD5004BF1EC /* DummyData.swift */; };
+		88E6EE6639E3468199C3B4FE /* Pods_TransferWise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D2C8003E30428743C6FC8A /* Pods_TransferWise.framework */; };
+		CDBAF0BA1703E270FB0B218B /* Pods_TransferWiseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572674DFCF8EB9BDFAF9C5CF /* Pods_TransferWiseTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42F0F69420E2265C004BF1EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42F0F67720E2265B004BF1EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42F0F67E20E2265B004BF1EC;
+			remoteInfo = TransferWise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D2C8003E30428743C6FC8A /* Pods_TransferWise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransferWise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		180AFE78E761FD943F97F2BC /* Pods-TransferWiseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferWiseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransferWiseTests/Pods-TransferWiseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		42F0F67F20E2265B004BF1EC /* TransferWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransferWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F0F68220E2265B004BF1EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42F0F68920E2265C004BF1EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42F0F68C20E2265C004BF1EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42F0F68E20E2265C004BF1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42F0F69320E2265C004BF1EC /* TransferWiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransferWiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F0F69720E2265C004BF1EC /* TransferWiseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferWiseTests.swift; sourceTree = "<group>"; };
+		42F0F69920E2265C004BF1EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42F0F6A920E22795004BF1EC /* StoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreType.swift; sourceTree = "<group>"; };
+		42F0F6AB20E227A3004BF1EC /* RealmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStore.swift; sourceTree = "<group>"; };
+		42F0F6AE20E227BF004BF1EC /* RealmPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPost.swift; sourceTree = "<group>"; };
+		42F0F6B020E227D0004BF1EC /* RealmComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmComment.swift; sourceTree = "<group>"; };
+		42F0F6B220E22902004BF1EC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		42F0F6B420E22919004BF1EC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		42F0F6B620E2295A004BF1EC /* PostList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostList.storyboard; sourceTree = "<group>"; };
+		42F0F6BB20E229F4004BF1EC /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		42F0F6BD20E22A35004BF1EC /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		42F0F6BF20E22B3E004BF1EC /* PostType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostType.swift; sourceTree = "<group>"; };
+		42F0F6C120E22B48004BF1EC /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		42F0F6C320E22BA6004BF1EC /* PostTableViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewModelType.swift; sourceTree = "<group>"; };
+		42F0F6C520E22BB7004BF1EC /* PostTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewModel.swift; sourceTree = "<group>"; };
+		42F0F6C720E22BD5004BF1EC /* PostViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModelType.swift; sourceTree = "<group>"; };
+		42F0F6C920E22BE0004BF1EC /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		42F0F6CB20E22C5A004BF1EC /* PostTableViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewModelDelegate.swift; sourceTree = "<group>"; };
+		42F0F6CD20E22DA6004BF1EC /* APIClientType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientType.swift; sourceTree = "<group>"; };
+		42F0F6CF20E22DB2004BF1EC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		42F0F6D120E22DCD004BF1EC /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		42F0F6D320E22DDC004BF1EC /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
+		42F0F6D520E22ECB004BF1EC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		42F0F6D820E22F2F004BF1EC /* Reach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		42F0F6DA20E22F54004BF1EC /* ReachExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachExtension.swift; sourceTree = "<group>"; };
+		42F0F6DC20E22FBC004BF1EC /* PostListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListCoordinator.swift; sourceTree = "<group>"; };
+		42F0F6DF20E2309C004BF1EC /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		42F0F6E420E2333D004BF1EC /* CommentList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CommentList.storyboard; sourceTree = "<group>"; };
+		42F0F6E620E23350004BF1EC /* CommentListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListCoordinator.swift; sourceTree = "<group>"; };
+		42F0F6EA20E23394004BF1EC /* CommentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListViewController.swift; sourceTree = "<group>"; };
+		42F0F6EC20E233AB004BF1EC /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		42F0F6EE20E233BD004BF1EC /* CommentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentType.swift; sourceTree = "<group>"; };
+		42F0F6F020E233C5004BF1EC /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		42F0F6F220E233E8004BF1EC /* CommentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListViewModel.swift; sourceTree = "<group>"; };
+		42F0F6F420E233F6004BF1EC /* CommentListViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListViewModelType.swift; sourceTree = "<group>"; };
+		42F0F6F620E23403004BF1EC /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		42F0F6F820E23410004BF1EC /* CommentViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModelType.swift; sourceTree = "<group>"; };
+		42F0F6FA20E23429004BF1EC /* CommentListViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListViewModelDelegate.swift; sourceTree = "<group>"; };
+		42F0F70020E27B48004BF1EC /* PostTableViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewModelTest.swift; sourceTree = "<group>"; };
+		42F0F70220E27B61004BF1EC /* PostViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModelTest.swift; sourceTree = "<group>"; };
+		42F0F70420E27B7F004BF1EC /* CommentListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListViewModelTest.swift; sourceTree = "<group>"; };
+		42F0F70620E27B8E004BF1EC /* CommentViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModelTest.swift; sourceTree = "<group>"; };
+		42F0F70820E27BA5004BF1EC /* DummyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyStore.swift; sourceTree = "<group>"; };
+		42F0F70A20E27BB4004BF1EC /* DummyEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyEndPoint.swift; sourceTree = "<group>"; };
+		42F0F70C20E27BD5004BF1EC /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
+		572674DFCF8EB9BDFAF9C5CF /* Pods_TransferWiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransferWiseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A233AD438FD8EF8F0F4F241B /* Pods-TransferWiseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferWiseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransferWiseTests/Pods-TransferWiseTests.release.xcconfig"; sourceTree = "<group>"; };
+		B1167FEB668C5FFFD2F770F5 /* Pods-TransferWise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferWise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransferWise/Pods-TransferWise.debug.xcconfig"; sourceTree = "<group>"; };
+		FCE1999FC8691812DE6C8ACE /* Pods-TransferWise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferWise.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransferWise/Pods-TransferWise.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42F0F67C20E2265B004BF1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88E6EE6639E3468199C3B4FE /* Pods_TransferWise.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F0F69020E2265C004BF1EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDBAF0BA1703E270FB0B218B /* Pods_TransferWiseTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		227F1743794AFF3F9CCC0A01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1167FEB668C5FFFD2F770F5 /* Pods-TransferWise.debug.xcconfig */,
+				FCE1999FC8691812DE6C8ACE /* Pods-TransferWise.release.xcconfig */,
+				180AFE78E761FD943F97F2BC /* Pods-TransferWiseTests.debug.xcconfig */,
+				A233AD438FD8EF8F0F4F241B /* Pods-TransferWiseTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		42F0F67620E2265B004BF1EC = {
+			isa = PBXGroup;
+			children = (
+				42F0F68120E2265B004BF1EC /* TransferWise */,
+				42F0F69620E2265C004BF1EC /* TransferWiseTests */,
+				42F0F68020E2265B004BF1EC /* Products */,
+				227F1743794AFF3F9CCC0A01 /* Pods */,
+				687319E3451F5A0BDB5F4868 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		42F0F68020E2265B004BF1EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F67F20E2265B004BF1EC /* TransferWise.app */,
+				42F0F69320E2265C004BF1EC /* TransferWiseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42F0F68120E2265B004BF1EC /* TransferWise */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6B220E22902004BF1EC /* Coordinator.swift */,
+				42F0F68220E2265B004BF1EC /* AppDelegate.swift */,
+				42F0F6B420E22919004BF1EC /* AppCoordinator.swift */,
+				42F0F6A220E22718004BF1EC /* Scenes */,
+				42F0F68920E2265C004BF1EC /* Assets.xcassets */,
+				42F0F68B20E2265C004BF1EC /* LaunchScreen.storyboard */,
+				42F0F68E20E2265C004BF1EC /* Info.plist */,
+			);
+			path = TransferWise;
+			sourceTree = "<group>";
+		};
+		42F0F69620E2265C004BF1EC /* TransferWiseTests */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6FC20E27B02004BF1EC /* Scenes */,
+				42F0F69720E2265C004BF1EC /* TransferWiseTests.swift */,
+				42F0F69920E2265C004BF1EC /* Info.plist */,
+			);
+			path = TransferWiseTests;
+			sourceTree = "<group>";
+		};
+		42F0F6A220E22718004BF1EC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6A320E22722004BF1EC /* Common */,
+				42F0F6A520E22744004BF1EC /* CommentList */,
+				42F0F6A420E22738004BF1EC /* PostList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		42F0F6A320E22722004BF1EC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6DE20E23084004BF1EC /* Views */,
+				42F0F6D720E22EDE004BF1EC /* Utils */,
+				42F0F6A620E22757004BF1EC /* Service */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		42F0F6A420E22738004BF1EC /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6BA20E229D0004BF1EC /* ViewModels */,
+				42F0F6B920E229CA004BF1EC /* Models */,
+				42F0F6B820E229C3004BF1EC /* Views */,
+				42F0F6B620E2295A004BF1EC /* PostList.storyboard */,
+				42F0F6DC20E22FBC004BF1EC /* PostListCoordinator.swift */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
+		42F0F6A520E22744004BF1EC /* CommentList */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6E320E23324004BF1EC /* ViewModels */,
+				42F0F6E220E2331E004BF1EC /* Models */,
+				42F0F6E120E23317004BF1EC /* Views */,
+				42F0F6E420E2333D004BF1EC /* CommentList.storyboard */,
+				42F0F6E620E23350004BF1EC /* CommentListCoordinator.swift */,
+			);
+			path = CommentList;
+			sourceTree = "<group>";
+		};
+		42F0F6A620E22757004BF1EC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6A820E22768004BF1EC /* Network */,
+				42F0F6A720E22762004BF1EC /* Store */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		42F0F6A720E22762004BF1EC /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6AD20E227A8004BF1EC /* RealmModels */,
+				42F0F6A920E22795004BF1EC /* StoreType.swift */,
+				42F0F6AB20E227A3004BF1EC /* RealmStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		42F0F6A820E22768004BF1EC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6CD20E22DA6004BF1EC /* APIClientType.swift */,
+				42F0F6CF20E22DB2004BF1EC /* APIClient.swift */,
+				42F0F6D120E22DCD004BF1EC /* APIConfiguration.swift */,
+				42F0F6D320E22DDC004BF1EC /* APIEndPoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		42F0F6AD20E227A8004BF1EC /* RealmModels */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6AE20E227BF004BF1EC /* RealmPost.swift */,
+				42F0F6B020E227D0004BF1EC /* RealmComment.swift */,
+			);
+			path = RealmModels;
+			sourceTree = "<group>";
+		};
+		42F0F6B820E229C3004BF1EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6BB20E229F4004BF1EC /* PostTableViewController.swift */,
+				42F0F6BD20E22A35004BF1EC /* PostTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42F0F6B920E229CA004BF1EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6BF20E22B3E004BF1EC /* PostType.swift */,
+				42F0F6C120E22B48004BF1EC /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42F0F6BA20E229D0004BF1EC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6C320E22BA6004BF1EC /* PostTableViewModelType.swift */,
+				42F0F6C520E22BB7004BF1EC /* PostTableViewModel.swift */,
+				42F0F6C720E22BD5004BF1EC /* PostViewModelType.swift */,
+				42F0F6C920E22BE0004BF1EC /* PostViewModel.swift */,
+				42F0F6CB20E22C5A004BF1EC /* PostTableViewModelDelegate.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		42F0F6D720E22EDE004BF1EC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6D520E22ECB004BF1EC /* Constants.swift */,
+				42F0F6D820E22F2F004BF1EC /* Reach.swift */,
+				42F0F6DA20E22F54004BF1EC /* ReachExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		42F0F6DE20E23084004BF1EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6DF20E2309C004BF1EC /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42F0F6E120E23317004BF1EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6EA20E23394004BF1EC /* CommentListViewController.swift */,
+				42F0F6EC20E233AB004BF1EC /* CommentTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42F0F6E220E2331E004BF1EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6EE20E233BD004BF1EC /* CommentType.swift */,
+				42F0F6F020E233C5004BF1EC /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42F0F6E320E23324004BF1EC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6F220E233E8004BF1EC /* CommentListViewModel.swift */,
+				42F0F6F420E233F6004BF1EC /* CommentListViewModelType.swift */,
+				42F0F6F620E23403004BF1EC /* CommentViewModel.swift */,
+				42F0F6F820E23410004BF1EC /* CommentViewModelType.swift */,
+				42F0F6FA20E23429004BF1EC /* CommentListViewModelDelegate.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		42F0F6FC20E27B02004BF1EC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F6FF20E27B1C004BF1EC /* Common */,
+				42F0F6FE20E27B13004BF1EC /* PostList */,
+				42F0F6FD20E27B0C004BF1EC /* CommentList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		42F0F6FD20E27B0C004BF1EC /* CommentList */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F70420E27B7F004BF1EC /* CommentListViewModelTest.swift */,
+				42F0F70620E27B8E004BF1EC /* CommentViewModelTest.swift */,
+			);
+			path = CommentList;
+			sourceTree = "<group>";
+		};
+		42F0F6FE20E27B13004BF1EC /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F70020E27B48004BF1EC /* PostTableViewModelTest.swift */,
+				42F0F70220E27B61004BF1EC /* PostViewModelTest.swift */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
+		42F0F6FF20E27B1C004BF1EC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				42F0F70820E27BA5004BF1EC /* DummyStore.swift */,
+				42F0F70A20E27BB4004BF1EC /* DummyEndPoint.swift */,
+				42F0F70C20E27BD5004BF1EC /* DummyData.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		687319E3451F5A0BDB5F4868 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02D2C8003E30428743C6FC8A /* Pods_TransferWise.framework */,
+				572674DFCF8EB9BDFAF9C5CF /* Pods_TransferWiseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42F0F67E20E2265B004BF1EC /* TransferWise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F0F69C20E2265C004BF1EC /* Build configuration list for PBXNativeTarget "TransferWise" */;
+			buildPhases = (
+				01E5A07A3E8F9B58A11E24C0 /* [CP] Check Pods Manifest.lock */,
+				42F0F67B20E2265B004BF1EC /* Sources */,
+				42F0F67C20E2265B004BF1EC /* Frameworks */,
+				42F0F67D20E2265B004BF1EC /* Resources */,
+				F8E38B64D143BABDDA532B72 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransferWise;
+			productName = TransferWise;
+			productReference = 42F0F67F20E2265B004BF1EC /* TransferWise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42F0F69220E2265C004BF1EC /* TransferWiseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F0F69F20E2265C004BF1EC /* Build configuration list for PBXNativeTarget "TransferWiseTests" */;
+			buildPhases = (
+				B4CB5A21AEFD281F95146F7F /* [CP] Check Pods Manifest.lock */,
+				42F0F68F20E2265C004BF1EC /* Sources */,
+				42F0F69020E2265C004BF1EC /* Frameworks */,
+				42F0F69120E2265C004BF1EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42F0F69520E2265C004BF1EC /* PBXTargetDependency */,
+			);
+			name = TransferWiseTests;
+			productName = TransferWiseTests;
+			productReference = 42F0F69320E2265C004BF1EC /* TransferWiseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42F0F67720E2265B004BF1EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Prashant Kumar Nayak";
+				TargetAttributes = {
+					42F0F67E20E2265B004BF1EC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					42F0F69220E2265C004BF1EC = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 42F0F67E20E2265B004BF1EC;
+					};
+				};
+			};
+			buildConfigurationList = 42F0F67A20E2265B004BF1EC /* Build configuration list for PBXProject "TransferWise" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42F0F67620E2265B004BF1EC;
+			productRefGroup = 42F0F68020E2265B004BF1EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42F0F67E20E2265B004BF1EC /* TransferWise */,
+				42F0F69220E2265C004BF1EC /* TransferWiseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42F0F67D20E2265B004BF1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F0F6E520E2333D004BF1EC /* CommentList.storyboard in Resources */,
+				42F0F68D20E2265C004BF1EC /* LaunchScreen.storyboard in Resources */,
+				42F0F6B720E2295A004BF1EC /* PostList.storyboard in Resources */,
+				42F0F68A20E2265C004BF1EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F0F69120E2265C004BF1EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01E5A07A3E8F9B58A11E24C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransferWise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4CB5A21AEFD281F95146F7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransferWiseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E38B64D143BABDDA532B72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TransferWise/Pods-TransferWise-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransferWise/Pods-TransferWise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42F0F67B20E2265B004BF1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F0F6EF20E233BD004BF1EC /* CommentType.swift in Sources */,
+				42F0F6E020E2309C004BF1EC /* ErrorView.swift in Sources */,
+				42F0F6F920E23410004BF1EC /* CommentViewModelType.swift in Sources */,
+				42F0F6CC20E22C5A004BF1EC /* PostTableViewModelDelegate.swift in Sources */,
+				42F0F6CA20E22BE0004BF1EC /* PostViewModel.swift in Sources */,
+				42F0F6DD20E22FBC004BF1EC /* PostListCoordinator.swift in Sources */,
+				42F0F6F320E233E8004BF1EC /* CommentListViewModel.swift in Sources */,
+				42F0F68320E2265B004BF1EC /* AppDelegate.swift in Sources */,
+				42F0F6C220E22B48004BF1EC /* Post.swift in Sources */,
+				42F0F6B120E227D0004BF1EC /* RealmComment.swift in Sources */,
+				42F0F6FB20E23429004BF1EC /* CommentListViewModelDelegate.swift in Sources */,
+				42F0F6B320E22902004BF1EC /* Coordinator.swift in Sources */,
+				42F0F6D220E22DCD004BF1EC /* APIConfiguration.swift in Sources */,
+				42F0F6C020E22B3E004BF1EC /* PostType.swift in Sources */,
+				42F0F6AF20E227BF004BF1EC /* RealmPost.swift in Sources */,
+				42F0F6ED20E233AB004BF1EC /* CommentTableViewCell.swift in Sources */,
+				42F0F6D920E22F2F004BF1EC /* Reach.swift in Sources */,
+				42F0F6AA20E22795004BF1EC /* StoreType.swift in Sources */,
+				42F0F6C420E22BA6004BF1EC /* PostTableViewModelType.swift in Sources */,
+				42F0F6DB20E22F54004BF1EC /* ReachExtension.swift in Sources */,
+				42F0F6D620E22ECB004BF1EC /* Constants.swift in Sources */,
+				42F0F6D420E22DDC004BF1EC /* APIEndPoint.swift in Sources */,
+				42F0F6BC20E229F4004BF1EC /* PostTableViewController.swift in Sources */,
+				42F0F6CE20E22DA6004BF1EC /* APIClientType.swift in Sources */,
+				42F0F6F520E233F6004BF1EC /* CommentListViewModelType.swift in Sources */,
+				42F0F6EB20E23394004BF1EC /* CommentListViewController.swift in Sources */,
+				42F0F6AC20E227A3004BF1EC /* RealmStore.swift in Sources */,
+				42F0F6E720E23350004BF1EC /* CommentListCoordinator.swift in Sources */,
+				42F0F6B520E22919004BF1EC /* AppCoordinator.swift in Sources */,
+				42F0F6F720E23403004BF1EC /* CommentViewModel.swift in Sources */,
+				42F0F6F120E233C5004BF1EC /* Comment.swift in Sources */,
+				42F0F6BE20E22A35004BF1EC /* PostTableViewCell.swift in Sources */,
+				42F0F6C820E22BD5004BF1EC /* PostViewModelType.swift in Sources */,
+				42F0F6C620E22BB7004BF1EC /* PostTableViewModel.swift in Sources */,
+				42F0F6D020E22DB2004BF1EC /* APIClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F0F68F20E2265C004BF1EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F0F70D20E27BD5004BF1EC /* DummyData.swift in Sources */,
+				42F0F70720E27B8E004BF1EC /* CommentViewModelTest.swift in Sources */,
+				42F0F70B20E27BB4004BF1EC /* DummyEndPoint.swift in Sources */,
+				42F0F70520E27B7F004BF1EC /* CommentListViewModelTest.swift in Sources */,
+				42F0F70120E27B48004BF1EC /* PostTableViewModelTest.swift in Sources */,
+				42F0F69820E2265C004BF1EC /* TransferWiseTests.swift in Sources */,
+				42F0F70920E27BA5004BF1EC /* DummyStore.swift in Sources */,
+				42F0F70320E27B61004BF1EC /* PostViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42F0F69520E2265C004BF1EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42F0F67E20E2265B004BF1EC /* TransferWise */;
+			targetProxy = 42F0F69420E2265C004BF1EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42F0F68B20E2265C004BF1EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42F0F68C20E2265C004BF1EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42F0F69A20E2265C004BF1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42F0F69B20E2265C004BF1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42F0F69D20E2265C004BF1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1167FEB668C5FFFD2F770F5 /* Pods-TransferWise.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransferWise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashant.TransferWise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42F0F69E20E2265C004BF1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCE1999FC8691812DE6C8ACE /* Pods-TransferWise.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransferWise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashant.TransferWise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42F0F6A020E2265C004BF1EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 180AFE78E761FD943F97F2BC /* Pods-TransferWiseTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransferWiseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashant.TransferWiseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransferWise.app/TransferWise";
+			};
+			name = Debug;
+		};
+		42F0F6A120E2265C004BF1EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A233AD438FD8EF8F0F4F241B /* Pods-TransferWiseTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransferWiseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prashant.TransferWiseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransferWise.app/TransferWise";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42F0F67A20E2265B004BF1EC /* Build configuration list for PBXProject "TransferWise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F0F69A20E2265C004BF1EC /* Debug */,
+				42F0F69B20E2265C004BF1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F0F69C20E2265C004BF1EC /* Build configuration list for PBXNativeTarget "TransferWise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F0F69D20E2265C004BF1EC /* Debug */,
+				42F0F69E20E2265C004BF1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F0F69F20E2265C004BF1EC /* Build configuration list for PBXNativeTarget "TransferWiseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F0F6A020E2265C004BF1EC /* Debug */,
+				42F0F6A120E2265C004BF1EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42F0F67720E2265B004BF1EC /* Project object */;
+}
